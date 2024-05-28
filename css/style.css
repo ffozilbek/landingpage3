@@ -18,7 +18,10 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
     flex-direction: column;
     background-color: #fff;
     color: #222;
@@ -31,10 +34,115 @@ img {
 
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1568px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 64px;
+    padding-right: 64px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main {
+    padding: 64px 0px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left-side {
+    width: 654px;
+}
+.logo {
+    width: 101px;
+    height: 101px;
+    margin-bottom: 55px;
+}
+.left-side-content {
+    margin-left: 24px;
+    margin-bottom: 70px;
+}
+.left-side-header {
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 32px;
+    color: #050505;
+}
+.left-side-paragraph {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Work Sans", sans-serif;
+    color:#333333;
+    margin-bottom: 32px;
+}
+.left-side-link {
+    padding: 24px 48px;
+    border: 1px solid #333333;
+    color:#333333;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.left-side-link:not(:last-child) {
+    margin-right: 32px;
+}
+
+.active {
+    background-color: #050505;
+    color:#fff;
+}
+
+.left-site-bottom-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    border: 1px solid #111;
+    border-radius: 16px;
+}
+.lits-item {
+    flex-grow: 1;
+    width: 91px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.lits-item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+.text {
+    margin: 0;
+    padding: 0;
+}
+.sun-icon {
+    background-image: url("../img/sun.svg");
+}
+.star-icon {
+    background-image: url("../img/star.svg");
+}
+.eye-icon {
+    background-image: url("../img/eye.svg");
+}
+.internet-icon {
+    background-image: url("../img/internet.svg");
+}
+
+.right-side-img {
+    width: 635px;
+    height: 778px;
+    display: flex;
 }
